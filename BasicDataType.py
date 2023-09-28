@@ -79,5 +79,31 @@ print(list[2:])
 print(tinylist*2)
 print(list + tinylist)
 
+# 元组 Tuple
+# 元素不能修改
+tuple = ('abcd', 786, 2.23, 'runnob', 70.2)
+tinytuple = (123, 'runnob')
 
+print(tuple)
+print(tuple[0])
+print(tuple[1:3])
+print(tuple[2:])
+print(tinytuple*2)
+print(tuple + tinytuple)
+tup1 = ()
+tup2 = (20,) # 单元组要加逗号
+
+# 集合 Set
+# 无序、可变、用于存储唯一的元素，集合中的元素不会重复
+# 在python中，集合用{ }表示，逗号分割； 可以使用set（）函数创建，空集必须使用set（） 创建，因为{}是用来创建字典的
+
+sites = {'google', 'zhihu', 'taobao', 'runoob', 'facebook', 'zhihu', 'zhihu', 'baidu'}
+
+print(sites) #自动去掉重复元素保留一个
+
+
+if 'runoob' in sites:
+    print("True")
+else:
+    print("Flase")
 
